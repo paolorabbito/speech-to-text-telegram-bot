@@ -5,10 +5,9 @@ A Telegram bot that automatically transcribes voice messages sent in group chats
 ## Features
 
 - 🎤 Automatic voice message transcription
-- 🌍 Multi-language support (WIP)
-- 🤖 Built with Telegraf framework
+- 🌍 [WIP] Multi-language support
 - ⚡ Fast transcription using Mistral AI's Voxtral models
-- 🔧 Configurable transcription models and languages
+- 🔧 [WIP] Configurable transcription models and languages in each group
 
 ## Prerequisites
 
@@ -70,12 +69,12 @@ npm test
 
 The bot uses the `TrascriptionService` class which can be configured with:
 
-- **Model**: Choose between different Voxtral models
+- **[WIP]Model**: Choose between different Voxtral models (WIP)
   - `voxtral-mini-latest` (default)
   - `voxtral-small-latest`
   - Specific versions like `voxtral-mini-2507`
 
-- **Language**: Set the primary language for transcription (default: Italian)
+- **[WIP]Language**: Set the primary language for transcription (default: Italian)
 
 ## Project Structure
 
