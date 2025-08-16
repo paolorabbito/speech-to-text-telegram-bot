@@ -1,0 +1,23 @@
+{
+  "name": "speech-to-text-bot",
+  "version": "1.0.0",
+  "description": "telegram bot to generate text over each vocals that have been sent in a group chat",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/main.ts",
+    "start": "node src/main.js",
+    "test": "node --test --require ts-node/register \"**/*.test.ts\" \"**/*.spec.ts\""
+  },
+  "author": "paolorabbito",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "telegraf": "^4.16.3"
+  }
+}
