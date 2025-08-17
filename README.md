@@ -5,30 +5,14 @@ A Telegram bot that automatically transcribes voice messages sent in group chats
 ## Features
 
 - 🎤 Automatic voice message transcription
-- 🌍 Multi-language support (12 languages)
-- 🤖 Built with Telegraf framework
+- 🌍 [WIP] Multi-language support
 - ⚡ Fast transcription using Mistral AI's Voxtral models
-- 🔧 Configurable transcription models and languages
-
-## Supported Languages
-
-- English (en)
-- Italian (it) - Default
-- French (fr)
-- German (de)
-- Spanish (es)
-- Portuguese (pt)
-- Russian (ru)
-- Chinese (zh)
-- Japanese (ja)
-- Korean (ko)
-- Arabic (ar)
-- Hindi (hi)
+- 🔧 [WIP] Configurable transcription models and languages in each group
 
 ## Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js (v20 or higher)
+- npm
 - Telegram Bot Token (from [@BotFather](https://t.me/botfather))
 - Mistral AI API Key
 
@@ -85,12 +69,12 @@ npm test
 
 The bot uses the `TrascriptionService` class which can be configured with:
 
-- **Model**: Choose between different Voxtral models
+- **[WIP]Model**: Choose between different Voxtral models (WIP)
   - `voxtral-mini-latest` (default)
   - `voxtral-small-latest`
   - Specific versions like `voxtral-mini-2507`
 
-- **Language**: Set the primary language for transcription (default: Italian)
+- **[WIP]Language**: Set the primary language for transcription (default: Italian)
 
 ## Project Structure
 
