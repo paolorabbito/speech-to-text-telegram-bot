@@ -4,7 +4,8 @@ export class TrascriptionService {
     constructor(
         private apiKey: string, 
         private model: ModelsList = 'voxtral-mini-latest',
-        private language: LanguageList = 'it'
+        private language: LanguageList = 'it',
+        private url: string = process.env.MISTRAL_URL ?? ''
     ) {}
 
     async trascribe(audioUrl: string) {
@@ -13,7 +14,9 @@ export class TrascriptionService {
         form.append('model', this.model)
         form.append('language', this.language)
 
-        const result = await (await fetch('https://api.mistral.ai/v1/audio/transcriptions', {
+        
+
+        const result = await (await fetch(`${this.url}/audio/transcriptions`, {
             method: 'POST',
             headers: {
             'x-api-key': this.apiKey,
